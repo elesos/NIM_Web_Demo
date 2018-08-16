@@ -33,8 +33,8 @@ var options = {
 };
 
 var httpServer = http.createServer(app);
-httpServer.listen(8182, function () {
-    console.info('server start at ' + 8182)
+httpServer.listen(8080, function () {
+    console.info('server start at ' + 8080)
     logAddress(httpServer, 'http');
 });
 var httpsServer = https.createServer(options, app);

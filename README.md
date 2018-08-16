@@ -1,9 +1,9 @@
 
 # 网易云信web demo简介
-网易云信demo工程基于网易云信[webSDK](/docs/product/IM即时通讯/SDK开发集成/Web开发集成/概要介绍)，演示了SDK聊天，群组，点对点音视频等功能。用户可参照该demo，将网易云信SDK接入自己的app。
+网易云信demo工程基于网易云信webSDK，演示了SDK聊天，群组，点对点音视频等功能。用户可参照该demo，将网易云信SDK接入自己的app。
 
 ## 预览demo
-demo地址https://github.com/netease-im/NIM_Web_Demo
+demo地址:http://elesos.com:8080/webdemo/im/index.html
 
 将工程克隆到本地，使用静态服务启动本工程。
 
@@ -12,7 +12,7 @@ demo地址https://github.com/netease-im/NIM_Web_Demo
 2. `node app`
 3. 在浏览器中访问 http://127.0.0.1:8888/webdemo/index.html
 
-** 注：必须启服务预览demo文件（node服务只是一个例子，并非必须）**
+注：必须启动服务预览demo文件（node服务只是一个例子，并非必须）
 
 ## IM功能
 
@@ -21,7 +21,7 @@ demo地址https://github.com/netease-im/NIM_Web_Demo
 依赖SDK文件 Web_SDK_Base.js, Web_SDK_MIN.js(版本号这里略去了)，此外demo依赖jQuery ,并使用了部分JQueryUI插件
 * link.js：初始化SDK，以及封装SDK相关功能的方法
 
-* cache.js：负责业务数据层相关操作（数据包括消息对象，好友列表，回话列表，群等）
+* cache.js：负责业务数据层相关操作（数据包括消息对象，好友列表，会话列表，群等）
 
 * main.js：功能入口
 * module/*.js  webdemo各个模块文件的目录 其实base.js是入口文件  其他功能模块文件按需加载即可
@@ -80,7 +80,7 @@ message.js里sendTextMsg,uploadFile方法提供发送文本，文件功能。发
 依赖SDK文件 Web_SDK_Base.js, Web_SDK_Chartroom.js(版本号这里略去了)
 
 ##### 目录简介
-* dist：代码产出位置（源码代码看这里）
+* dist：代码产出位置（源代码看这里）
 
 * font：字体图标
 
@@ -89,12 +89,12 @@ message.js里sendTextMsg,uploadFile方法提供发送文本，文件功能。发
 * src：开发环境位置（不需要关心此处）
 
 #### 核心代码
-* link.js: 连接SDK实例代码，SDKAPI业务上再次封装
+* link.js: 连接SDK实例代码，SDK API业务上再次封装
 * room.js:聊天室的主要业务逻辑
 
 #### 开发思路
 
-[初始化SDK](/docs/product/IM即时通讯/SDK开发集成/Web开发集成/初始化)
+初始化SDK
 
 监听消息通知  —> UI渲染
 
